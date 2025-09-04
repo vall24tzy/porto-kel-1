@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Nama Anda</title>
+    <meta name="description" content="Portofolio pribadi: profil, keahlian, proyek, pengalaman, dan kontak." />
+
+    <!-- SEO / Social -->
+    <meta property="og:title" content="Portofolio — Nama Anda" />
+    <meta property="og:description" content="Portofolio pribadi: profil, keahlian, proyek, pengalaman, dan kontak." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/preview.jpg" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- CSS terpisah -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo" aria-hidden>NA</div>
+          <span>Nama Anda</span>
+        </div>
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="#tentang">Tentang</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#proyek">Proyek</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+        <div class="cta">
+          <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Unduh CV</a>
+          <button id="themeToggle" class="btn" aria-label="Ubah tema">🌓</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="container hero">
+      <div>
+        <span class="tag">Tersedia untuk freelance</span>
+        <h1>Halo, saya <span style="color: var(--brand-2)">Nama Anda</span> — Frontend & UI Engineer yang suka membangun produk cepat, rapi, dan accessible.</h1>
+        <p class="lead">Berpengalaman membuat antarmuka modern dengan HTML, CSS, dan JavaScript (serta React). Fokus pada performa, DX, dan pengalaman pengguna yang memuaskan.</p>
+        <div class="actions">
+          <a class="btn" href="#proyek">Lihat Proyek</a>
+          <a class="pill" href="mailto:email@domain.com">✉️ email@domain.com</a>
+          <a class="pill" href="https://github.com/username" target="_blank" rel="noopener">💻 github.com/username</a>
+          <a class="pill" href="https://www.linkedin.com/in/username" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
+      </div>
+      <div class="avatar" aria-hidden>
+        <!-- Ganti dengan foto Anda (1:1) -->
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f468-200d-1f4bb.svg" alt="Avatar" />
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang">
+      <div class="container reveal">
+        <div class="section-title">Tentang</div>
+        <p style="max-width: 70ch; color: var(--muted)">
+          Saya menyukai kolaborasi lintas-disiplin, dokumentasi yang rapi, dan desain sistem. Di waktu luang saya, saya mengajar coding dasar dan menulis artikel tentang front-end performance. Target 2025: merilis 3 proyek OSS yang membantu
+          developer baru memulai lebih cepat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian">
+      <div class="container reveal">
+        <div class="section-title">Keahlian</div>
+        <div class="chips">
+          <span class="chip">HTML Semantik</span>
+          <span class="chip">CSS Modern (Grid/Flex)</span>
+          <span class="chip">JavaScript (ESNext)</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Tailwind</span>
+          <span class="chip">A11y</span>
+          <span class="chip">Performance</span>
+          <span class="chip">Figma → Code</span>
+          <span class="chip">Git & CI</span>
+          <span class="chip">Testing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek">
+      <div class="container reveal">
+        <div class="section-title">Proyek Pilihan</div>
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="thumb"><span>🔎</span></div>
+            <div class="body">
+              <h3>Aplikasi Pencari Film</h3>
+              <p>Mencari dan menyimpan daftar film favorit menggunakan API publik.</p>
+              <div class="meta">
+                <span class="chip">React</span>
+                <span class="chip">REST API</span>
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="thumb"><span>🛒</span></div>
+            <div class="body">
+              <h3>Landing Page E‑Commerce</h3>
+              <p>Halaman arahan cepat dengan skor Lighthouse 95+ untuk SEO dan Performance.</p>
+              <div class="meta">
+                <span class="chip">Next.js</span>
+                <span class="chip">Tailwind</span>
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="thumb"><span>📊</span></div>
+            <div class="body">
+              <h3>Dashboard Analytics</h3>
+              <p>Visualisasi metrik real-time dengan caching pintar dan state terkelola.</p>
+              <div class="meta">
+                <span class="chip">TypeScript</span>
+                <span class="chip">Charts</span>
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman">
+      <div class="container reveal">
+        <div class="section-title">Pengalaman</div>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-title">
+              <h3>Frontend Engineer — PT Contoh Teknologi</h3>
+              <span>2023 — Sekarang</span>
+            </div>
+            <p style="color: var(--muted)">Memimpin migrasi ke Next.js, meningkatkan Core Web Vitals dan menghemat ~35% TTFB.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-title">
+              <h3>UI Developer — Studio Kreatif</h3>
+              <span>2021 — 2023</span>
+            </div>
+            <p style="color: var(--muted)">Membangun design system internal & komponen aksesibel dengan dokumentasi Storybook.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <div class="container reveal">
+        <div class="section-title">Kontak</div>
+        <form id="contactForm" novalidate>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
+            <label>
+              <span>Nama</span>
+              <input name="nama" placeholder="Nama lengkap" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="email@domain.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Pesan</span>
+            <textarea name="pesan" placeholder="Tulis pesan Anda" required></textarea>
+          </label>
+          <div style="display: flex; gap: 10px; align-items: center">
+            <button class="btn" type="submit">Kirim</button>
+            <span id="formStatus" style="color: var(--muted)"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">© <span id="year"></span> Nama Anda — Dibuat dengan HTML, CSS, JS.</div>
+    </footer>
+
+    <!-- JS terpisah -->
+    <script src="script.js"></script>
+
+    <!-- Skema JSON-LD (sesuaikan) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nama Anda",
+        "url": "https://domainanda.com",
+        "sameAs": ["https://github.com/username", "https://www.linkedin.com/in/username"],
+        "jobTitle": "Frontend Engineer",
+        "worksFor": { "@type": "Organization", "name": "PT Contoh Teknologi" }
+      }
+    </script>
+  </body>
+</html>
